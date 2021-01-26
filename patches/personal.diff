@@ -57,6 +57,19 @@ index 2f0bc76..803101a 100644
  
  #include "movestack.c"
  static Key keys[] = {
+diff --git a/dwm.c b/dwm.c
+index 0dbff48..ec0c886 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -287,7 +287,7 @@ static void (*handler[LASTEvent]) (XEvent *) = {
+ 	[ConfigureRequest] = configurerequest,
+ 	[ConfigureNotify] = configurenotify,
+ 	[DestroyNotify] = destroynotify,
+-	[EnterNotify] = enternotify,
++	/* [EnterNotify] = enternotify, */
+ 	[Expose] = expose,
+ 	[FocusIn] = focusin,
+ 	[KeyPress] = keypress,
 diff --git a/tags.c b/tags.c
 new file mode 100644
 index 0000000..91ec548
